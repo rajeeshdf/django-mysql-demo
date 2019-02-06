@@ -132,4 +132,4 @@ dmypy.json
 .DS_Store
 .stfolder
 .stignore
-devspaces/buildspec.yml
+devspace/buildspec.yml
