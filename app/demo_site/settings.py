@@ -25,7 +25,7 @@ SECRET_KEY = 'm-dc1-w)hnwx_9(#@h^1jb#sc*js#iqmqj^37)h=l6+hbihsv9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.devspaces.io']
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '.devspaces.io']
 
 
 # Application definition
@@ -122,4 +122,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+    '/var/www/static/',
+]

@@ -12,7 +12,7 @@
 [client]
 database = django
 user = django
-password = P@ssword
+password = password
 default-character-set=utf8
 
 [mysqld]

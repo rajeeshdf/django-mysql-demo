@@ -1,6 +1,16 @@
 # Django Demo Application
 
-## Instructions for running inside Docker
+## Instructions for running in DevSpaces
 
-  * Create a container from Docker image python:3.6
-  * Run `start.sh` script from the container
+  1. Navigate to `devspaces` directory
+  2. Run `devspaces create` command
+  3. Once DevSpace is ready, start it using command `devspaces start django-mysql-demo`
+  4. Connect to DevSpace by running `devspaces exec django-mysql-demo` command.
+  5. From your DevSpace run startup script `./start.sh`
+
+
+
+### Admin Credentials
+
+  * _Username:_ **admin**
+  * _Password:_ **password**

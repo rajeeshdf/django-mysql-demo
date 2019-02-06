@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+APP_DIR=${DIR}/app
 MYSQL_ROOT_PASSWORD=P@ssword
-MYSQL_DJANGO_PASSWORD=P@ssword
+MYSQL_DJANGO_PASSWORD=password
 
 log ()
 {
@@ -73,7 +74,7 @@ run_application()
   python manage.py runserver 0.0.0.0:8000
 }
 
-pushd ${DIR} > /dev/null
+pushd ${APP_DIR} > /dev/null
 
 prepare_db
 run_application
